@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Timer</title>
+    <link rel="stylesheet" href="Resources/pomodoro.css">
+</head>
+    <body>
+    <div class="container">
+        <!-- Navbar -->
+        <div class="navbar">
+            <div class="icon"></div>
+        </div>
+        <div class="menu">
+            <img id="menu-img" src="Resources/cat_smile.png" alt="teman belajar" title="kucing ini akan menemanimu belajar" style="margin-bottom: 0px;"><p id="menu-p">Semangat Belajarnya kaka!</p>
+        </div>
+        <!-- Timer Section -->
+        <div class="timer-section">
+            <h1>Pomodoro Timer</h1>
+            <div class="timer">
+                <span id="minutes">25</span>:<span id="seconds">00</span>
+            </div>
+            <div class="timer-controls">
+                <select id="timer-type">
+                    <option value="study">⏰Study</option>
+                    <option value="break">🛋️Sleep</option>
+                </select>
+                <input type="number" id="custom-time" placeholder="⏱️" min="0">
+                <button id="toggle-timer">▶️</button>
+                <button id="reset-timer">🔄️</button>
+            </div>
+        </div>
+        <div class="bottom-section">
+            <!-- Spotify Section -->
+            <div class="spotify-section">
+                <h2>Spotify</h2>
+                <iframe style="border-radius:12px; width: 100%; height: 100%;" src="https://open.spotify.com/embed/playlist/52t8avwZDYMxcCj6KqSJXt?utm_source=generator&theme=0" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
+            <!-- To-Do List Section -->
+            <div class="todo-section">
+                <h2>To Do List</h2>
+                <div class="todo-input">
+                    <input type="text" id="todo-input" placeholder="Tambah tugas baru">
+                    <button id="add-todo">➕</button>
+                </div>
+                <ul id="todo-list"></ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="Resources/pomodoro.js"></script>
+</body>
+</html>
